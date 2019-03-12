@@ -1,5 +1,7 @@
+/* Import google font */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400");
 
+/* Universal settings */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
   box-sizing: border-box;
 }
 
+/* Background and font colours */
 body {
   width: 100%;
   background-image: linear-gradient(
@@ -20,18 +23,18 @@ body {
   color: bisque;
 }
 
+/* Position the header */
 header {
-  width: 100%;
-  float: left;
-  height: 300px;
   padding-top: 30px;
 }
 
+/* Format the H1 on the header */
 header h1 {
   border-bottom: 2px solid darkgreen;
   padding: 25px 0 1px 20px;
 }
 
+/* Image settings */
 header img {
   position: relative;
   width: 250px;
@@ -43,10 +46,12 @@ header img {
   transform: skew(-0.06turn, 18deg);
 }
 
+/* Format the H5 on the header */
 header h5 {
   padding: 5px 0 0 40px;
 }
 
+/* Format the P on the header */
 header p {
   padding: 20px 0 10px 40px;
   width: 500px;
@@ -54,19 +59,28 @@ header p {
   border-bottom: 1px solid darkgreen;
 }
 
-#education {
+/* Size the sections */
+#education,
+#skills,
+#experience,
+#hobbies,
+#references {
   width: 100%;
 }
 
+/* Format the H3 on the education section */
 #education aside h3 {
   padding: 10px 0 5px 40px;
   text-decoration: underline;
 }
 
-#education aside h4 {
+/* format the H4 on the education and experience sections */
+#education aside h4,
+#experience aside h4 {
   padding: 1px 0 0 40px;
 }
 
+/* Format the P on the education section */
 #education aside p {
   width: 500px;
   padding: 1px 0 10px 40px;
@@ -74,89 +88,76 @@ header p {
   border-bottom: 1px solid darkgreen;
 }
 
-#skills {
-  width: 100%;
-}
-
+/* Format the H3 on the skills section */
 #skills aside h3 {
   padding: 10px 0 5px 40px;
   text-decoration: underline;
   border-right: 1px solid darkgreen;
 }
 
+/* Format the P on the skills section */
 #skills aside p {
+  width: 500px;
   padding: 1px 0 0 40px;
   font-size: 14px;
 }
 
-#skills aside p:nth-child(2) {
+/* Format the last P on the skills section */
+#skills aside p:last-child {
   padding-bottom: 10px;
+  border-bottom: 1px solid darkgreen;
 }
 
-#experience {
-  width: 100%;
-}
-
+/* Format h3 on the experience section  */
 #experience aside h3 {
   padding: 10px 0 5px 40px;
   text-decoration: underline;
 }
 
-#experience aside h4 {
-  padding: 1px 0 0 40px;
-}
-
+/* Format the span on the experience section */
 #experience aside span {
   font-size: 10px;
   color: lightgray;
   padding-left: 30px;
 }
 
+/* Format H4 on the experience section */
 #experience aside h4 {
   width: 500px;
   padding: 0 0 10px 40px;
-  border-bottom: 1px solid darkgreen;
 }
 
+/* Format the UL on the experience section */
 #experience aside ul {
   padding: 1px 0 1px 55px;
 }
 
+/* Format the LI on the experience section */
 #experience aside li {
   font-size: 14px;
+  padding-top: 0;
 }
 
-#experience aside li:nth-child(2) {
+/* Format the last LI on the experience section */
+#experience aside li:last-child {
   padding-bottom: 10px;
 }
 
-#hobbies {
-  float: left;
-  width: 100%;
-}
-
-#hobbies aside h3 {
-  padding: 10px 0 5px 40px;
-  text-decoration: underline;
-}
-
-#hobbies aside p {
+#experience aside:last-child li:last-child {
+  padding-left: 0;
   width: 500px;
-  padding: 1px 0 10px 40px;
-  font-size: 14px;
   border-bottom: 1px solid darkgreen;
 }
 
-#references {
-  float: left;
-  width: 100%;
-}
-
+/* Format the H3 on the hobbies and references sections */
+#hobbies aside h3,
 #references aside h3 {
   padding: 10px 0 5px 40px;
   text-decoration: underline;
 }
 
+/* Format the P on the hobbies and references sections */
+#hobbies aside p,
 #references aside p {
   width: 500px;
   padding: 1px 0 10px 40px;
