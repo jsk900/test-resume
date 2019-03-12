@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #355532,
+    #3f6931,
+    #4d7d2d,
+    #5f9023,
+    #75a40b
+  );
+  color: bisque;
+}
+
+header {
+  width: 100%;
+  float: left;
+  height: 300px;
+  padding-top: 30px;
+}
+
+header h1 {
+  border-bottom: 2px solid darkgreen;
+  padding: 25px 0 1px 20px;
+}
+
+header img {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  float: right;
+  top: -43px;
+  right: 90px;
+  border: 2px solid darkgreen;
+  transform: skew(-0.06turn, 18deg);
+}
+
+header h5 {
+  padding: 5px 0 0 40px;
+}
+
+header p {
+  padding: 20px 0 10px 40px;
+  width: 500px;
+  font-size: 14px;
+  border-bottom: 1px solid darkgreen;
+}
+
+#education {
+  width: 100%;
+}
+
+#education aside h3 {
+  padding: 10px 0 5px 40px;
+  text-decoration: underline;
+}
+
+#education aside h4 {
+  padding: 1px 0 0 40px;
+}
+
+#education aside p {
+  width: 500px;
+  padding: 1px 0 10px 40px;
+  font-size: 14px;
+  border-bottom: 1px solid darkgreen;
+}
+
+#skills {
+  width: 100%;
+}
+
+#skills aside h3 {
+  padding: 10px 0 5px 40px;
+  text-decoration: underline;
+  border-right: 1px solid darkgreen;
+}
+
+#skills aside p {
+  padding: 1px 0 0 40px;
+  font-size: 14px;
+}
+
+#skills aside p:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+#experience {
+  width: 100%;
+}
+
+#experience aside h3 {
+  padding: 10px 0 5px 40px;
+  text-decoration: underline;
+}
+
+#experience aside h4 {
+  padding: 1px 0 0 40px;
+}
+
+#experience aside span {
+  font-size: 10px;
+  color: lightgray;
+  padding-left: 30px;
+}
+
+#experience aside h4 {
+  width: 500px;
+  padding: 0 0 10px 40px;
+  border-bottom: 1px solid darkgreen;
+}
+
+#experience aside ul {
+  padding: 1px 0 1px 55px;
+}
+
+#experience aside li {
+  font-size: 14px;
+}
+
+#experience aside li:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+#hobbies {
+  float: left;
+  width: 100%;
+}
+
+#hobbies aside h3 {
+  padding: 10px 0 5px 40px;
+  text-decoration: underline;
+}
+
+#hobbies aside p {
+  width: 500px;
+  padding: 1px 0 10px 40px;
+  font-size: 14px;
+  border-bottom: 1px solid darkgreen;
+}
+
+#references {
+  float: left;
+  width: 100%;
+}
+
+#references aside h3 {
+  padding: 10px 0 5px 40px;
+  text-decoration: underline;
+}
+
+#references aside p {
+  width: 500px;
+  padding: 1px 0 10px 40px;
+  font-size: 14px;
+  border-bottom: 1px solid darkgreen;
+}
