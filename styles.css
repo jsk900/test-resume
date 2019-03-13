@@ -12,15 +12,10 @@
 /* Background and font colours */
 body {
   width: 100%;
-  background-image: linear-gradient(
-    to right top,
-    #355532,
-    #3f6931,
-    #4d7d2d,
-    #5f9023,
-    #75a40b
-  );
-  color: bisque;
+  background-image: url("images/forest-png-hd-images-hd-wallpaper-background-image-id-683733-1920.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #a4e0a4;
 }
 
 /* Position the header */
@@ -30,7 +25,7 @@ header {
 
 /* Format the H1 on the header */
 header h1 {
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #a4e0a4;
   padding: 25px 0 1px 20px;
 }
 
@@ -42,7 +37,7 @@ header img {
   float: right;
   top: -43px;
   right: 90px;
-  border: 2px solid darkgreen;
+  border: 2px solid #a4e0a4;
   transform: skew(-0.06turn, 18deg);
 }
 
@@ -56,7 +51,7 @@ header p {
   padding: 20px 0 10px 40px;
   width: 500px;
   font-size: 14px;
-  border-bottom: 1px solid darkgreen;
+  border-bottom: 1px solid #a4e0a4;
 }
 
 /* Size the sections */
@@ -85,14 +80,14 @@ header p {
   width: 500px;
   padding: 1px 0 10px 40px;
   font-size: 14px;
-  border-bottom: 1px solid darkgreen;
+  border-bottom: 1px solid #a4e0a4;
 }
 
 /* Format the H3 on the skills section */
 #skills aside h3 {
   padding: 10px 0 5px 40px;
   text-decoration: underline;
-  border-right: 1px solid darkgreen;
+  border-right: 1px solid #a4e0a4;
 }
 
 /* Format the P on the skills section */
@@ -105,7 +100,7 @@ header p {
 /* Format the last P on the skills section */
 #skills aside p:last-child {
   padding-bottom: 10px;
-  border-bottom: 1px solid darkgreen;
+  border-bottom: 1px solid #a4e0a4;
 }
 
 /* Format h3 on the experience section  */
@@ -136,6 +131,7 @@ header p {
 #experience aside li {
   font-size: 14px;
   padding-top: 0;
+  list-style: none;
 }
 
 /* Format the last LI on the experience section */
@@ -143,10 +139,10 @@ header p {
   padding-bottom: 10px;
 }
 
-#experience aside:last-child li:last-child {
+#experience aside:last-child {
   padding-left: 0;
   width: 500px;
-  border-bottom: 1px solid darkgreen;
+  border-bottom: 1px solid #a4e0a4;
 }
 
 /* Format the H3 on the hobbies and references sections */
@@ -162,5 +158,5 @@ header p {
   width: 500px;
   padding: 1px 0 10px 40px;
   font-size: 14px;
-  border-bottom: 1px solid darkgreen;
+  border-bottom: 1px solid #a4e0a4;
 }
