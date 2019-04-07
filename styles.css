@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+
   box-sizing: border-box;
 }
 
@@ -15,147 +15,180 @@ body {
   background-image: url("images/forest-png-hd-images-hd-wallpaper-background-image-id-683733-1920.png");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #a4e0a4;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
-/* Position the header */
-header {
-  padding-top: 30px;
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 1fr 1fr 270px;
+}
+
+main header {
+  grid-row: 1/2;
+  grid-column: 1 / 6;
+  border-bottom: 2px solid #a4e0a4;
 }
 
 /* Format the H1 on the header */
-header h1 {
-  border-bottom: 2px solid #a4e0a4;
-  padding: 25px 0 1px 20px;
+main header h1 {
+  padding: 35px 0 0 5px;
+  font-size: 1.3em;
+  color: #a4e0a4;
+  grid-row: 1;
+  grid-column: 1 / 2;
 }
 
-/* Image settings */
-header img {
-  position: relative;
-  width: 250px;
-  height: 200px;
-  float: right;
-  top: -43px;
-  right: 90px;
+/* Header Image settings */
+img {
+  width: 270px;
+  height: 180px;
+  margin: 45px 35px 0 0;
+  grid-row: 1 / 2;
+  grid-column: 5;
   border: 2px solid #a4e0a4;
   transform: skew(-0.06turn, 18deg);
 }
 
-/* Format the H5 on the header */
-header h5 {
-  padding: 5px 0 0 40px;
+/* Details section start */
+section:first-of-type {
+  grid-row: 2;
+  grid-column: 1;
+  padding: 70px 0 0 80px;
+  color: #fdfffd;
 }
 
-/* Format the P on the header */
-header p {
-  padding: 20px 0 10px 40px;
-  width: 500px;
-  font-size: 14px;
-  border-bottom: 1px solid #a4e0a4;
-}
-
-/* Size the sections */
-#education,
-#skills,
-#experience,
-#hobbies,
-#references {
-  width: 100%;
-}
-
-/* Format the H3 on the education section */
-#education aside h3 {
-  padding: 10px 0 5px 40px;
+section:first-of-type h3 {
   text-decoration: underline;
+  padding-bottom: 3px;
 }
 
-/* format the H4 on the education and experience sections */
-#education aside h4,
-#experience aside h4 {
-  padding: 1px 0 0 40px;
+section:first-of-type h5 {
+  padding: 0 0 5px 5px;
 }
 
-/* Format the P on the education section */
-#education aside p {
-  width: 500px;
-  padding: 1px 0 10px 40px;
-  font-size: 14px;
-  border-bottom: 1px solid #a4e0a4;
+section:first-of-type p {
+  padding: 5px 0 0 10px;
+  font-size: 0.9em;
 }
 
-/* Format the H3 on the skills section */
-#skills aside h3 {
-  padding: 10px 0 5px 40px;
+/* Details section end */
+
+/* Education section start */
+section:nth-of-type(2) {
+  grid-row: 2;
+  grid-column: 2;
+  padding: 70px 0 0 30px;
+  color: #fdfffd;
+}
+
+section:nth-of-type(2) h3 {
   text-decoration: underline;
+  padding-bottom: 3px;
 }
 
-/* Format the P on the skills section */
-#skills aside p {
-  width: 500px;
-  padding: 1px 0 0 40px;
-  font-size: 14px;
+section:nth-of-type(2) h5 {
+  padding: 0 0 5px 5px;
 }
 
-/* Format the last P on the skills section */
-#skills aside p:last-child {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #a4e0a4;
+section:nth-of-type(2) p {
+  padding: 10px 0 0 10px;
+  font-size: 0.9em;
 }
 
-/* Format h3 on the experience section  */
-#experience aside h3 {
-  padding: 10px 0 5px 40px;
+/* Education section end */
+
+/* Skills section start */
+section:nth-of-type(3) {
+  grid-row: 2;
+  grid-column: 3;
+  padding: 70px 0 0 30px;
+  color: #fdfffd;
+}
+
+section:nth-of-type(3) h3 {
   text-decoration: underline;
+  padding-bottom: 3px;
 }
 
-/* Format the span on the experience section */
-#experience aside span {
-  font-size: 10px;
-  color: lightgray;
-  padding-left: 30px;
+section:nth-of-type(3) p:first-of-type {
+  padding-top: 10px;
 }
 
-/* Format H4 on the experience section */
-#experience aside h4 {
-  width: 500px;
-  padding: 0 0 10px 40px;
+section:nth-of-type(3) p {
+  font-size: 0.9em;
+  padding-left: 10px;
 }
 
-/* Format the UL on the experience section */
-#experience aside ul {
-  padding: 1px 0 1px 55px;
+/* Skills section end */
+
+/* Experience section start */
+section:nth-of-type(4) {
+  grid-row: 3;
+  grid-column: 1;
+  padding: 25px 0 0 80px;
+  color: #fdfffd;
 }
 
-/* Format the LI on the experience section */
-#experience aside li {
-  font-size: 14px;
-  padding-top: 0;
-  list-style: none;
+section:nth-of-type(4) h3 {
+  text-decoration: underline;
+  padding-bottom: 3px;
 }
 
-/* Format the last LI on the experience section */
-#experience aside li:last-child {
+section:nth-of-type(4) h5 {
+  padding: 0 0 3px 5px;
+}
+
+section:nth-of-type(4) p:nth-of-type(2) {
   padding-bottom: 10px;
 }
 
-#experience aside:last-child {
-  padding-left: 0;
-  width: 500px;
-  border-bottom: 1px solid #a4e0a4;
+section:nth-of-type(4) p {
+  font-size: .9em;
+  padding: 0 0 3px 10px;
 }
 
-/* Format the H3 on the hobbies and references sections */
-#hobbies aside h3,
-#references aside h3 {
-  padding: 10px 0 5px 40px;
+/* Experience  section end */
+
+/* Hobbies section start */
+section:nth-of-type(5) {
+  grid-row: 3;
+  grid-column: 2;
+  padding: 25px 0 0 30px;
+  color: #fdfffd;
+}
+
+section:nth-of-type(5) h3 {
   text-decoration: underline;
+  padding-bottom: 3px;
 }
 
-/* Format the P on the hobbies and references sections */
-#hobbies aside p,
-#references aside p {
-  width: 500px;
-  padding: 1px 0 10px 40px;
-  font-size: 14px;
-  border-bottom: 1px solid #a4e0a4;
+section:nth-of-type(5) p {
+  font-size: 0.9em;
+  padding: 10px 0 0 10px;
 }
+
+/* Hobbies  section end */
+
+/* References section start */
+section:last-of-type {
+  grid-row: 3;
+  grid-column: 3;
+  padding: 25px 0 0 30px;
+  color: #fdfffd;
+}
+
+section:last-of-type h3 {
+  text-decoration: underline;
+  padding-bottom: 3px;
+}
+
+section:last-of-type p {
+  font-size: 0.9em;
+  padding: 10px 0 0 10px;
+}
+
+/* References  section end */
